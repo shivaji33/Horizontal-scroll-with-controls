@@ -1,0 +1,15 @@
+<div class="scroll-container" #container>
+    <div *ngFor="let item of items" class="scroll-item">
+      <img [src]="item.url" style="width: 150px" />
+    </div>
+</div>
+
+<div class="controls">
+  <button class="scroll-button left" (click)="scrollLeft()" [hidden]="isLeftButtonHidden">
+  Left
+</button>
+<button class="scroll-button right"  (click)="scrollRight()" [hidden]="isRightButtonHidden">
+  Right
+</button>
+</div>
+
