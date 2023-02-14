@@ -28,6 +28,7 @@ export class HorizontalScrollComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.containerEl.nativeElement.addEventListener('wheel', (event) => {
+      // TODO
       // if (event.deltaX > 0) {
       //   console.log('Mouse wheel scrolled to the right');
       // } else if (event.deltaX < 0) {
